@@ -20,7 +20,7 @@ resource "spacelift_stack_dependency_reference" "reference" {
 
 resource "spacelift_stack" "infra" {
   branch       = "main"
-  space        = "legacy"
+  space_id      = "legacy"
   name         = "Infrastructure stack"
   repository   = "intermediate-repo"
   project_root = "Stack-Dependencies/Infra"
